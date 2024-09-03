@@ -1,0 +1,80 @@
+{
+    "nombre": "Subway",
+    "descripcion": "Subway es un restaurante de comida rápida, enfocado principalmente en emparedados. Se ha caracterizado por la personalización de pedidos y rápida entrega.",
+    "etiquetas" : [
+        "Cómida rápida",
+        "Personalización",
+        "Emparedados"
+    ],
+    "menu": [
+        {
+            "nombreMenu": "Italiano B.M.T",
+            "descripcion" : "Emparedado con rebanadas de salame, pepperoni y jamón acompañado de queso cheddar",
+            "precio": "Q37",
+            "ingredientes":[
+                "Jamón",
+                "Queso Cheddar",
+                "Salame",
+                "Pan"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Carne y Queso",
+            "descripcion": "Emparedado de filete de carne, tierno y jugoso acompañado de queso",
+            "precio": "Q38",
+            "ingredientes":[
+                "Carne de Res",
+                "Queso Cheddar",
+                "Pan"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Pollo Pizziola",
+            "descripcion": "Emparedado al estilo italiano con pepperoni, pechuga de pollo, salsa marinara y queso",
+            "precio": "Q37",
+            "ingredientes":[
+                "Pepperoni",
+                "Pollo",
+                "Salsa Marinara",
+                "Queso Cheddar",
+                "Pan"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Jamon y Pavo",
+            "descripcion": "Emparedado que combina jamón con pechuga de pavo",
+            "precio": "Q32",
+            "ingredientes":[
+                "Jamón",
+                "Pavo",
+                "Pan"
+            ],
+            "complementos":[]
+        }
+    ],
+    "opciones" : [
+        {
+            "nombreIngrediente" : "Pan",
+            "descripcionIngrediente" : "Se debe elegir solo un tipo de Pan",
+            "opciones":[
+                "Integral",
+                "Blanco",
+                "Oregano",
+                "Italiano",
+                "Tortilla"
+            ]
+        },
+        {
+            "nombreIngrediente": "Vegetales",
+            "descripcionIngrediente": "Se pueden elegir multiples vegetales",
+            "opciones": [
+                "Lechuga",
+                "Tomate",
+                "Cebolla"
+            ]
+        }
+    ]
+}
