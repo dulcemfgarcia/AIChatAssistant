@@ -1,15 +1,23 @@
 import json #Librería para manejo de objetos json
-from openai import OpenAI #SDK de OpenAI para API de ChatGPT
-#from flask import Flask, jsonify, request #Para levantar servidor de peticiones Flask
-#from flask_cors import CORS, cross_origin #Para el manejo de CORS entre servidor y cliente
+from openai import OpenAI #SDK de OpenAI para API de ChatGPT (pip install openai)
+from pydantic import BaseModel
+from fastapi import FastAPI #Librería para crear entorno de API (pip installa fastapi[standard])
+import uvicorn #Utilizado para levantar el servidor virtual (pip install uvicorn[standard])
+from fastapi.middleware.cors import CORSMiddleware #Import librería especial para contrato CORS
+from typing import List
 
-#app = Flask(__name__)
+app = FastAPI()
 
-#CORS(app)
+if __name__ == '__main__':
+   uvicorn.run('main:app', port=8000)
 
-#if __name__ == "__main__":
-#    app.run(debug=True)
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=['*'],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 with open('Restaurantes/AlMacarone.json', 'r') as archivo:
     AlMacarone = json.load(archivo)
@@ -19,25 +27,27 @@ with open('Restaurantes/Comedor.json') as archivo:
 
 client = OpenAI()
 
-messagesCollection = [
-    {
-        "role": "system",
-        "content": f"Tu objetivo es brindar asistencia en la elección de comida basado en presupuesto y características saludables de estudiantes de la Universidad Rafael Landívar de Guatemala la cual cuenta con los siguientes restaurantes: {AlMacarone}, {Comedor}. Si se menciona un restaurante o comida no incluidos en la información previa, responder 'Lamentablemente, esa opción no esta diponible en la URL, te motivamos a consultar el menú disponible'. Adicionalmente, si se realizar una solicitud que no esté relacionada con alimentación deberá notificar al usuario que ese no es el propósito del sistema."
-    },
-]
+InitialPrompt = {
+    "role": "system",
+    "content": f"Tu objetivo es brindar asistencia en la elección de comida basado en presupuesto y características saludables de estudiantes de la Universidad Rafael Landívar de Guatemala la cual cuenta con los siguientes restaurantes: {AlMacarone}, {Comedor}. Si se menciona un restaurante o comida no incluidos en la información previa, responder 'Lamentablemente, esa opción no esta diponible en la URL, te motivamos a consultar el menú disponible'. Adicionalmente, si se realizar una solicitud que no esté relacionada con alimentación deberá notificar al usuario que ese no es el propósito del sistema."
+}
 
-#@app.after_request
-#def add_cors_headers(response):
-#    response.headers.add('Access-Control-Allow-Origin', '*')
-#    response.headers.add('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-#    response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
-#   return response
+class bodyChatRequest(BaseModel):
+    role: str
+    content: str
 
-#@app.route('/ConsultarLandivarEats', methods=['POST'])
-def ConsultarLandivarEats(consulta):
-    #datos = request.json
-    #consulta = datos['consulta']
-    messagesCollection.append({
+class ChatRequest(BaseModel):
+   chat: str
+   history: List[bodyChatRequest]
+
+@app.post('/ConsultarLandivarEats')
+def ConsultarLandivarEats(chat : ChatRequest):
+    consulta = chat.chat
+
+    if len(chat.history) <= 0:
+        chat.history.append(InitialPrompt)
+
+    chat.history.append({
         "role": "user",
         "content": consulta
     })
@@ -45,26 +55,18 @@ def ConsultarLandivarEats(consulta):
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
         temperature=0.2,
-        messages=messagesCollection
+        messages=chat.history
     )
 
     response = completion.choices[0].message.content
 
-    messagesCollection.append({
+    chat.history.append({
         "role": "assistant",
         "content": response
     })
 
-    #return jsonify(response)
-    return response
-
-contador = 0
-
-while contador < 5 :
-    entrada = input("¿Qué desea hacer?: ")
-    respuesta = ConsultarLandivarEats(entrada)
-    print(respuesta)
-    print()
-
-    contador += 1
+    return {
+        "chat": response,
+        "history": chat.history,
+    }
     
