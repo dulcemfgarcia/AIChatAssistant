@@ -1,0 +1,72 @@
+{
+    "nombre": "Al Macarone",
+    "descripcion": "Al Macarone es un restaurante de comida rápida, principalmente comida italiana como pizza o pastas. Se ha caracterizado por su bajos precios y rápida entrega.",
+    "etiquetas" : [
+        "Cómida rápida",
+        "Comida italiana",
+        "Económico",
+        "Pizza"
+    ],
+    "menu": [
+        {
+            "nombreMenu": "Pizza personal de Jamón",
+            "descripcion" : "Pizza de jamón individual de 4 porciones",
+            "precio": "Q17",
+            "ingredientes":[
+                "Jamón",
+                "Queso",
+                "Salsa de tomate",
+                "Pan"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Pizza personal remix",
+            "descripcion": "Pizza individual de varios ingredientes, también conocida como deluxe",
+            "precio": "Q19",
+            "ingredientes":[
+                "Carne",
+                "Pimiento",
+                "Cebolla",
+                "Hongo",
+                "jamón",
+                "Queso",
+                "Salsa de tomate",
+                "Pan"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Pizza Grandiozza",
+            "descripcion": "Combo de pizza de 8 porciones para compartir que incluye complementos",
+            "precio": "Q77",
+            "ingredientes":[
+                "Carne",
+                "Peperoni",
+                "Pimiento",
+                "Queso",
+                "Salsa de tomate",
+                "Pan"
+            ],
+            "complementos": [
+                "Pepsi de 1.5 litros",
+                "Pizza Dulce personal de 4 porciones"
+            ]
+        },
+        {
+            "nombreMenu": "Lunch de Lasagna",
+            "descripcion": "Combo de Lasgna individual que incluye complementos",
+            "precio": "Q35",
+            "ingredientes":[
+                "Pasta",
+                "Carne",
+                "Salsa de tomate",
+                "Queso"
+            ],
+            "complementos": [
+                "Gaseosa a elección, entre Pepsi, Mirinda, Grapete o 7up",
+                "Pan de mantequilla tostado"
+            ]
+        }
+    ]
+}

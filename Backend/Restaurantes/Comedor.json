@@ -1,0 +1,78 @@
+{
+    "nombre": "Comedor",
+    "descripcion": "El restaurante Comedor ofrece opciones de cocina casera y tradicional guatemalteca, se caracteriza por precios económicos variedad de productos",
+    "etiquetas" : [
+        "Cómida casera",
+        "Comida guatemalteca",
+        "Económico",
+        "Desayuno",
+        "Almuerzo",
+        "Cena"
+    ],
+    "menu": [
+        {
+            "nombreMenu": "Divorciados",
+            "descripcion" : "Desayuno tradicional de huevos al estilo tradicional con acompañamientos",
+            "precio": "Q22",
+            "ingredientes":[
+                "Huevos estrellados",
+                "Salsa ranchera",
+                "Salsa verde"
+            ],
+            "complementos": [
+                "Frijoles volteados o parados",
+                "Plátanos",
+                "Pan",
+                "Bebida natural de naranja o jamaica"
+            ]
+        },
+        {
+            "nombreMenu": "Panqueques o Waffles",
+            "descripcion" : "Desayuno de panqueques con miel y fruta de acompañamiento",
+            "precio": "Q22",
+            "ingredientes":[
+                "Panqueques",
+                "Miel",
+                "Rodajas de banano"
+            ],
+            "complementos": [
+                "Frijoles volteados o parados",
+                "Plátanos",
+                "Pan",
+                "Bebida natural de naranja o jamaica"
+            ]
+        },
+        {
+            "nombreMenu": "Burrito Americano",
+            "descripcion" : "Burrito al estilo americano que incluye acompañamientos",
+            "precio": "Q28",
+            "ingredientes":[
+                "Aguacate",
+                "Salchicha",
+                "Queso",
+                "Lechuga",
+                "Tortilla de harina"
+            ],
+            "complementos": [
+                "Bebida natural de naranja o jamaica",
+                "Chips"
+            ]
+        },
+        {
+            "nombreMenu": "Bowl Al Pastor",
+            "descripcion" : "Desayuno de panqueques con miel y fruta de acompañamiento",
+            "precio": "Q40",
+            "ingredientes":[
+                "Tomate",
+                "Aguacate",
+                "Lechuga",
+                "Carne al pastor",
+                "Frijoles cocidos",
+                "Pistachos"
+            ],
+            "complementos": [
+                "Gaseosa que puede ser Coca-Cola, Grapete o Mirinda"
+            ]
+        }
+    ]
+}

@@ -2,9 +2,11 @@ const inputEl = document.querySelector(".input-chat");
 const btnEl = document.querySelector(".fa-paper-plane");
 const cardBodyEl = document.querySelector(".card-body");
 
+var HistorialChat = []
+
 let userMessage;
 
-function manageChat(){
+async function manageChat(){
     userMessage = inputEl.value.trim();
 
     if(!userMessage) return;
@@ -12,9 +14,9 @@ function manageChat(){
     
     cardBodyEl.appendChild(messageEl(userMessage, "user"));
 
-    setTimeout(()=>{
-        cardBodyEl.appendChild(messageEl("Analizando datos y sugerencias...", "chat-bot"));
-    },600);
+    const mensaje = await ConsumirLandivarEats(userMessage);
+
+    cardBodyEl.appendChild(messageEl(mensaje, "chat-bot"));
 }
 
 //messages
@@ -32,3 +34,34 @@ const messageEl = (message, className) => {
 };
 
 btnEl.addEventListener("click", manageChat);
+
+//  Función para llamado a API de consulta ChatGPT
+async function ConsumirLandivarEats(consulta) {
+    datos = {
+        "chat": consulta,
+        "history": HistorialChat
+    }
+
+    try {
+        const respuesta = await fetch('http://localhost:8000/ConsultarLandivarEats', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(datos)
+        });
+    
+        if(!respuesta.ok){
+            throw new Error('Error: ${respuesta.status}');
+        }
+    
+        const resultado = await respuesta.json();
+
+        HistorialChat = resultado.history
+
+        return resultado.chat;
+    } catch (error) {
+        console.error('Error:', error);
+        return "Ha ocurrido un error"
+    }
+}
