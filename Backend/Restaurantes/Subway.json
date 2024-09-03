@@ -54,5 +54,27 @@
             ],
             "complementos":[]
         }
+    ],
+    "opciones" : [
+        {
+            "nombreIngrediente" : "Pan",
+            "descripcionIngrediente" : "Se debe elegir solo un tipo de Pan",
+            "opciones":[
+                "Integral",
+                "Blanco",
+                "Oregano",
+                "Italiano",
+                "Tortilla"
+            ]
+        },
+        {
+            "nombreIngrediente": "Vegetales",
+            "descripcionIngrediente": "Se pueden elegir multiples vegetales",
+            "opciones": [
+                "Lechuga",
+                "Tomate",
+                "Cebolla"
+            ]
+        }
     ]
 }
