@@ -8,14 +8,30 @@
     ],
     "menu": [
         {
+            "nombreMenu": "Jamon",
+            "descripcion" : "Emparedado con rebanadas de jamon y queso",
+            "precio": "Q32",
+            "ingredientes":[
+                "Jamón",
+                "Queso",
+                "Pan",
+                "Vegetales",
+                "Salsas"
+            ],
+            "complementos": []
+        },
+        {
             "nombreMenu": "Italiano B.M.T",
             "descripcion" : "Emparedado con rebanadas de salame, pepperoni y jamón acompañado de queso cheddar",
             "precio": "Q37",
             "ingredientes":[
                 "Jamón",
-                "Queso Cheddar",
+                "Queso",
                 "Salame",
-                "Pan"
+                "Pepperoni",
+                "Pan",
+                "Vegetales",
+                "Salsas"
             ],
             "complementos": []
         },
@@ -25,8 +41,10 @@
             "precio": "Q38",
             "ingredientes":[
                 "Carne de Res",
-                "Queso Cheddar",
-                "Pan"
+                "Queso",
+                "Pan",
+                "Vegetales",
+                "Salsas"
             ],
             "complementos":[]
         },
@@ -38,8 +56,10 @@
                 "Pepperoni",
                 "Pollo",
                 "Salsa Marinara",
-                "Queso Cheddar",
-                "Pan"
+                "Queso",
+                "Pan",
+                "Vegetales",
+                "Salsas"
             ],
             "complementos":[]
         },
@@ -50,7 +70,111 @@
             "ingredientes":[
                 "Jamón",
                 "Pavo",
-                "Pan"
+                "Pan",
+                "Vegetales",
+                "Salsas"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Pollo CordonBleu",
+            "descripcion": "Emparedado de pollo con jamon y queso",
+            "precio": "Q38",
+            "ingredientes":[
+                "Jamón",
+                "Pollo",
+                "Queso",
+                "Pan",
+                "Vegetales",
+                "Salsas"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Pollo BBQ",
+            "descripcion": "Emparedado de pollo bañado con salsa barbacoa",
+            "precio": "Q38",
+            "ingredientes":[
+                "Pollo",
+                "Pan",
+                "Vegetales",
+                "Salsas",
+                "Barbacoa"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Sub Frijolero",
+            "descripcion": "Emparedado de frijol perfecto para desayunar",
+            "precio": "Q15",
+            "ingredientes":[
+                "Frijol",
+                "Pan",
+                "Vegetales",
+                "Salsas"
+            ],
+            "complementos":[
+                "Cafe de 12 onz"
+            ]
+        },
+        {
+            "nombreMenu": "Costillas BBQ",
+            "descripcion": "Emparedado de costillas de cerdo bañado con salsa barbacoa",
+            "precio": "Q38",
+            "ingredientes":[
+                "Carne de Cerdo",
+                "Pan",
+                "Vegetales",
+                "Salsas",
+                "Barbacoa"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Vegetariano",
+            "descripcion": "Emparedado de vegetales",
+            "precio": "Q26",
+            "ingredientes":[
+                "Pan",
+                "Vegetales",
+                "Salsas"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Pavo",
+            "descripcion": "Emparedado de jamon de pavo",
+            "precio": "Q38",
+            "ingredientes":[
+                "Pavo",
+                "Pan",
+                "Vegetales",
+                "Salsas"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Pizza Sub",
+            "descripcion": "Emparedado al estilo italiano que combina las virtudes de la pizza",
+            "precio": "Q38",
+            "ingredientes":[
+                "Pepperoni",
+                "Salsa Marinara",
+                "Pan",
+                "Vegetales",
+                "Salsas"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Atun",
+            "descripcion": "Emparedado de atun",
+            "precio": "Q38",
+            "ingredientes":[
+                "Pan",
+                "Vegetales",
+                "Salsas",
+                "Atun"
             ],
             "complementos":[]
         }
@@ -63,8 +187,7 @@
                 "Integral",
                 "Blanco",
                 "Oregano",
-                "Italiano",
-                "Tortilla"
+                "Italiano"
             ]
         },
         {
@@ -73,8 +196,64 @@
             "opciones": [
                 "Lechuga",
                 "Tomate",
-                "Cebolla"
+                "Cebolla",
+                "Pepino",
+                "Pepinillo",
+                "Pimiento Verde",
+                "Jalapeño",
+                "Olivas"
             ]
+        },
+        {
+            "nombreIngrediente": "Queso",
+            "descripcionIngrediente": "Se debe elegir solo un tipo de queso",
+            "opciones": [
+                "Cheddar Procesado",
+                "Monterey Cheddar"
+            ]
+        },
+        {
+            "nombreIngrediente": "Salsas",
+            "descripcionIngrediente": "Se pueden elegir multiples salsas",
+            "opciones": [
+                "Chipotle",
+                "Mayonesa",
+                "Mostaza Dulce",
+                "Cebolla Dulce"
+            ]
+        }
+    ],
+    "menudeldia":[
+        {
+            "descripcion": "Cada día de la semana un emparedado esta en oferta por un precio menor al habitual",
+            "precio": "Q22",
+            "emparedado": [
+                {
+                    "diadelasemana": "Lunes",
+                    "emparedado": "Pollo CordonBleu"
+                },
+                {
+                    "diadelasemana": "Martes",
+                    "emparedado": "Pollo BBQ"
+                },
+                {
+                    "diadelasemana": "Miercoles",
+                    "emparedado": "Italiano B.M.T"
+                },
+                {
+                    "diadelasemana": "Jueves",
+                    "emparedado": "Pollo Teriyaki"
+                },
+                {
+                    "diadelasemana": "Viernes",
+                    "emparedado": "Costillas BBQ"
+                },
+                {
+                    "diadelasemana": "Sabado",
+                    "emparedado": "Italiano B.M.T"
+                }
+            ]
+            
         }
     ]
 }
