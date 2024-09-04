@@ -60,7 +60,7 @@
         },
         {
             "nombreMenu": "Bowl Al Pastor",
-            "descripcion" : "Desayuno de panqueques con miel y fruta de acompañamiento",
+            "descripcion" : "Platillo de diversos vegetales y con carne al pastor",
             "precio": "Q40",
             "ingredientes":[
                 "Tomate",
@@ -72,6 +72,19 @@
             ],
             "complementos": [
                 "Gaseosa que puede ser Coca-Cola, Grapete o Mirinda"
+            ]
+        },
+        {
+            "nombreMenu": "Smotthies",
+            "descripcion" : "Batido especial con diversas especialidades",
+            "precio": {
+                "Agua": "Q14",
+                "Juego de naranaja": "18"
+            },
+            "opciones":[
+                "Berries",
+                "Piña Colada",
+                "Maracuyá"
             ]
         }
     ]

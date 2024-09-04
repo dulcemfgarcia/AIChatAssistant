@@ -1,6 +1,8 @@
 {
-    "nombre": "Al Macarone",
+    "nombreRestaurante": "Al Macarone",
     "descripcion": "Al Macarone es un restaurante de comida rápida, principalmente comida italiana como pizza o pastas. Se ha caracterizado por su bajos precios y rápida entrega.",
+    "ubicación": "En el primer nivel del edificio I, a un lado de a editorial universitaria, ambos en el pasillo con escaleras que llevan al auditorio.",
+    "horarioDisponibilidad": "Abre a las 8 de la mañana y cierra a las 9:00 PM",
     "etiquetas" : [
         "Cómida rápida",
         "Comida italiana",
@@ -9,63 +11,107 @@
     ],
     "menu": [
         {
-            "nombreMenu": "Pizza personal de Jamón",
-            "descripcion" : "Pizza de jamón individual de 4 porciones",
-            "precio": "Q17",
-            "ingredientes":[
-                "Jamón",
-                "Queso",
-                "Salsa de tomate",
-                "Pan"
-            ],
-            "complementos": []
-        },
-        {
-            "nombreMenu": "Pizza personal remix",
-            "descripcion": "Pizza individual de varios ingredientes, también conocida como deluxe",
-            "precio": "Q19",
-            "ingredientes":[
-                "Carne",
-                "Pimiento",
-                "Cebolla",
-                "Hongo",
-                "jamón",
-                "Queso",
-                "Salsa de tomate",
-                "Pan"
-            ],
-            "complementos": []
-        },
-        {
-            "nombreMenu": "Pizza Grandiozza",
-            "descripcion": "Combo de pizza de 8 porciones para compartir que incluye complementos",
-            "precio": "Q77",
-            "ingredientes":[
-                "Carne",
-                "Peperoni",
-                "Pimiento",
-                "Queso",
-                "Salsa de tomate",
-                "Pan"
-            ],
-            "complementos": [
-                "Pepsi de 1.5 litros",
-                "Pizza Dulce personal de 4 porciones"
-            ]
-        },
-        {
-            "nombreMenu": "Lunch de Lasagna",
-            "descripcion": "Combo de Lasgna individual que incluye complementos",
-            "precio": "Q35",
-            "ingredientes":[
-                "Pasta",
-                "Carne",
-                "Salsa de tomate",
-                "Queso"
-            ],
-            "complementos": [
-                "Gaseosa a elección, entre Pepsi, Mirinda, Grapete o 7up",
-                "Pan de mantequilla tostado"
+            "personales": {
+                "pizzas": {
+                    "cantidadPorciones": 4,
+                    "tipo": "Personal",
+                    "opciones": [
+                        {
+                            "nombreMenu": "Jamón",
+                            "precio": "Q17",
+                            "descripcion": "pizza de queso y jamón"
+                        },
+                        {
+                            "nombreMenu": "Remix, Pepperoni, Salami",
+                            "precio": "Q19",
+                            "descripcion": "Pizza de queso y de un tipo como peperoni salami o remix"
+                        },
+                        {
+                            "nombreMenu": "Especialidad",
+                            "precio": "Q25",
+                            "descripcion": "Pizza de queso y con 1 especialidad, la especialidad puede ser italina, deluxe o 5 carnes"
+                        }
+                    ]
+                },
+                "rolloItaliano": {
+                    "tipo": "Personal",
+                    "Ingredientes": [
+                        "Pan",
+                        "Pimiento",
+                        "Jamón",
+                        "Queso"
+                    ],
+                    "opciones": [
+                        {
+                            "nombreMenu": "Un rollo",
+                            "precio": "Q12"
+                        },
+                        {
+                            "nombreMenu": "Dos rollos",
+                            "precio": "Q19"
+                        }
+                    ]
+                }
+            },
+            "pizzasTradicionales": {
+                "tipo": "Familiar",
+                "tiposPizza": {
+                    "unIngrediente": "La pizza puede incluir jamón, peperoni, salami o carne, además de salsa de tomate y queso.",
+                    "especialidad": "La pizza puede ser de las especialidades italiana, deluxe o 5 carnes"
+                },
+                "opciones":[
+                    {
+                        "tipoPizza": "Un ingrediente",
+                        "Porciones": 8,
+                        "precio": "Q59"
+                    },
+                    {
+                        "tipoPizza": "Especialidad",
+                        "Porciones": 8,
+                        "precio": "Q69"
+                    },
+                    {
+                        "tipoPizza": "Un ingrediente",
+                        "Porciones": 10,
+                        "precio": "Q75"
+                    },
+                    {
+                        "tipoPizza": "Especialidad",
+                        "Porciones": 10,
+                        "precio": "Q85"
+                    }
+                ]
+
+            },
+            "combos": [
+                {
+                    "nombreMenu": "2 pizzas tradicionales",
+                    "precio": "Q149",
+                    "incluye": [
+                        "2 pizzas cuadradas con base de tomate y queso de un ingrediente y 8 porciones cada una, los ingredientes pueden ser: jamón, peperoni o carne",
+                        "Bebida gaseosa Pepsi de 1.5 litros, con los vasos desechables que necesites para servir",
+                        "1 pizza dulce con crema de chocolate, y rodajas de banano"
+                    ]
+                },
+                {
+                    "nombreMenu": "1 pizza Grandiozza",
+                    "precio": "Q77",
+                    "incluye":[
+                        "1 pizza redonda de 8 porciones con pedazos de pimiento, queso, carne y un ingrediente a elección, el ingrediente puede ser: jamón, peperoni o carne",
+                        "Bebida gaseosa Pepsi de 1.5 litros con los vasos desechables que necesites para servir",
+                        "1 pizza dulce con crema de chocolate, y rodajas de banano"
+                    ]
+                },
+                {
+                    "nombreMenu": "2 Super Combo Pasta",
+                    "precio": "Q95",
+                    "incluye": [
+                        "2 Pastas de Lasagna o espaguetti, pueden combinarse, en las 2 opciones de pasta están compuestas por salsa de tomate, carne y queso, de tamaño individual",
+                        "2 rodajas de pan dorado con mantequilla",
+                        "2 helados que pueden ser de chocolate, fresa o vainilla",
+                        "2 vasos de gaseosa que puede traer hielo, los sabores diponibles son Pepsi, Grapete, Mirinda, 7up. Si se agrandan las bebdias por Q3 cada una, incluye refil"
+                    ]
+                }
             ]
         }
     ]
