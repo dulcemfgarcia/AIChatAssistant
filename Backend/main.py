@@ -28,6 +28,9 @@ with open('Restaurantes/Comedor.json') as archivo:
 with open('Restaurantes/Subway.json') as archivo:
     Subway = json.load(archivo)
 
+with open('Restaurantes/Gitane.json') as archivo:
+    Gitane = json.load(archivo)
+
 client = OpenAI()
 
 InitialPrompt = {
