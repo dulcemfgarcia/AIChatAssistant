@@ -1,0 +1,127 @@
+{
+    "nombre": "Gitane",
+    "descripcion": "Consiste en una cafetería con comida para llevar, que ofrece una gran variedad de combos para desayunos, almuerzos y cenas. Se caracteriza por ser conciderada como Gourmet por los estudiantes de la universidad. Suele ser un lugar frecuentado por los amantes del café o de las bebidas heladas. Su demanda es alta en la Universidad, a pesar de que sus precios son considerados como altos. Uno de sus mayores problemas es que la entrega del producto es un poco lenta, por lo que se pueden formar grandes filas de espera",
+    "etiquetas" : [
+        "Cómida Gourmet",
+        "Cafetería",
+        "Bebidas heladas",
+        "Café",
+        "Emparedados",
+        "Costoso",
+        "Desayuno",
+        "Almuerzo",
+        "Cena"
+    ],
+    "menu": [
+        {
+            "nombreMenu": "Ensalada europea",
+            "descripcion" : "Disponible en almuerzos y cenas, es una ensalada saludable, su ingrediente principal es la pechuga de pollo",
+            "precio": "Q40",
+            "ingredientes":[
+                "Pechuga de pollo",
+                "Lechuga",
+                "Tomate",
+                "Queso parmesano",
+                "Aguacate",
+                "Crutones"
+            ],
+            "complementos": [
+                "Bolsa de nachos marca Doritos",
+                "Bebida natural de jamaica o naranja"
+            ]
+        },
+        {
+            "nombreMenu": "Ensalada Veggie",
+            "descripcion" : "Disponible en almuerzos y cenas, es una ensalada saludable que se caracteriza por no tener ningún tipo de carne",
+            "precio": "Q36",
+            "ingredientes":[
+                "Aguacate",
+                "Tomate",
+                "Lechuga",
+                "Queso parmesano",
+                "Crutones"
+            ],
+            "complementos": [
+                "Bolsa de nachos marca Doritos",
+                "Bebida natural de jamaica o naranja"
+            ]
+        },
+        {
+            "nombreMenu": "Combo gitano de pollo deluxe",
+            "descripcion" : "Emparedado estrella de la cafetería, es poco saludable pero su sabor hace que sea bastante solicitado, se caracteríza por su doble pechuga de pollo",
+            "precio": "Q38",
+            "ingredientes":[
+                "Queso amarillo",
+                "Pechuga de pollo",
+                "Aguacate",
+                "Mayonesa"
+            ],
+            "complementos": [
+                "Bolsa de nachos marca Doritos",
+                "Bebida natural de jamaica o naranja"
+            ]
+        },
+        {
+            "nombreMenu": "Combo de burrito de salchicha y huevo",
+            "descripcion" : "Desayuno con huevo y salchicha como principales ingredientes, envueltos en una tortilla de harina, no es considerado como saludable",
+            "precio": "Q36",
+            "ingredientes":[
+                "Huevo",
+                "Salchicha",
+                "Queso",
+                "Tortilla de harina",
+                "Aderezo"
+            ],
+            "complementos": [
+                "Café americano de 12 oz.",
+                "Brownie"
+            ]
+        },
+        {
+            "nombreMenu": "Granita de café",
+            "descripcion" : "Bebida helada disponible en cualquier horario, su ingrediente principal es el café y no es completamente líquida, porque está hecha a partir de hielo raspado",
+            "precio": "Q27",
+            "ingredientes":[
+                "Café",
+                "Azúcar",
+                "Leche",
+                "Hielo",
+                "Agua"
+            ],
+            "complementos": [
+                "Crema batida",
+                "Chocolate líquido"
+            ]
+        },
+        {
+            "nombreMenu": "Granita de frutas",
+            "descripcion" : "Bebida helada disponible en cualquier horario, su ingrediente principal es la fresa o mora y no es completamente líquida, porque está hecha a partir de hielo raspado",
+            "precio": "Q25",
+            "ingredientes":[
+                "Fresa",
+                "Mora",
+                "Azúcar",
+                "Hielo",
+                "Agua"
+            ],
+            "complementos": [
+                "Crema batida"
+            ]
+        },
+        {
+            "nombreMenu": "Booster",
+            "descripcion" : "Bebida helada disponible en cualquier horario, busca poder darle energía al que la consume, sin llegar a ser dañino para la salud, es una mezcla de frutas y verduras en una bebida",
+            "precio": "Q20",
+            "ingredientes":[
+                "Piña",
+                "Zanahoria",
+                "Apio",
+                "Jugo de manzana",
+                "Jugo de naranja"
+            ],
+            "complementos": [
+                "Crema batida"
+            ]
+        }
+    ]
+}
