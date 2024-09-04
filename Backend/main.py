@@ -31,11 +31,14 @@ with open('Restaurantes/Subway.json') as archivo:
 with open('Restaurantes/Gitane.json') as archivo:
     Gitane = json.load(archivo)
 
+with open('Restaurantes/Manguito.json') as archivo:
+    Manguito = json.load(archivo)
+
 client = OpenAI()
 
 InitialPrompt = {
     "role": "system",
-    "content": f"Tu objetivo es brindar asistencia en la elección de comida basado en presupuesto y características saludables de estudiantes de la Universidad Rafael Landívar de Guatemala la cual cuenta con los siguientes restaurantes: {AlMacarone},{Subway}, {Comedor}, {Gitane}. Si se menciona un restaurante o comida no incluidos en la información previa, responder 'Lamentablemente, esa opción no esta diponible en la URL, te motivamos a consultar el menú disponible'. Adicionalmente, si se realizar una solicitud que no esté relacionada con alimentación deberá notificar al usuario que ese no es el propósito del sistema."
+    "content": f"Tu objetivo es brindar asistencia en la elección de comida basado en presupuesto y características saludables de estudiantes de la Universidad Rafael Landívar de Guatemala la cual cuenta con los siguientes restaurantes: {AlMacarone},{Subway}, {Comedor}, {Gitane}, {Manguito}. Si se menciona un restaurante o comida no incluidos en la información previa, responder 'Lamentablemente, esa opción no esta diponible en la URL, te motivamos a consultar el menú disponible'. Adicionalmente, si se realizar una solicitud que no esté relacionada con alimentación deberá notificar al usuario que ese no es el propósito del sistema."
 }
 
 class bodyChatRequest(BaseModel):
