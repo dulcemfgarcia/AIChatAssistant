@@ -34,11 +34,17 @@ with open('Restaurantes/Gitane.json') as archivo:
 with open('Restaurantes/Manguito.json') as archivo:
     Manguito = json.load(archivo)
 
+with open('Restaurantes/BurgerKing.json') as archivo:
+    BurgerKing = json.load(archivo)
+
+with open('Restaurantes/GoGreen.json') as archivo:
+    GoGreen = json.load(archivo)
+
 client = OpenAI()
 
 InitialPrompt = {
     "role": "system",
-    "content": f"Tu objetivo es brindar asistencia en la elección de comida basado en presupuesto y características saludables de estudiantes de la Universidad Rafael Landívar de Guatemala la cual cuenta con los siguientes restaurantes: {AlMacarone},{Subway}, {Comedor}, {Gitane}, {Manguito}. Si se menciona un restaurante o comida no incluidos en la información previa, responder 'Lamentablemente, esa opción no esta diponible en la URL, te motivamos a consultar el menú disponible'. Adicionalmente, si se realizar una solicitud que no esté relacionada con alimentación deberá notificar al usuario que ese no es el propósito del sistema."
+    "content": f"Tu objetivo es brindar asistencia en la elección de comida basado principalmente en el presupuesto, preferencias específicas como tipo de comida y otras características relevantes de los estudiantes de la Universidad Rafael Landívar de Guatemala. Los restaurantes disponibles son: {AlMacarone},{Subway}, {Comedor}, {Gitane}, {Manguito}, {BurgerKing}, {GoGreen}. Para cada restaurante, considera todas las opciones disponibles en el menú correspondiente que cumplan con los criterios del usuario. Asegúrate de incluir todas las opciones posibles dentro del presupuesto y las preferencias especificadas por el usuario. Si el usuario menciona una opción de comida o bebida que no está en los menús proporcionados, responde: 'Lamentablemente, esa opción no está disponible en la URL. Por favor, consulta el menú disponible.'. Además, si se realiza una solicitud que no esté relacionada con alimentación, notifica al usuario que ese no es el propósito del sistema."
 }
 
 class bodyChatRequest(BaseModel):

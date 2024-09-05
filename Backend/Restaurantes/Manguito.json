@@ -1,10 +1,11 @@
 {
     "nombre": "Manguito",
-    "descripcion": "Manguito es una tienda-restaurante de shucos o panes, postres, snacks, pero su principal producto son las granizadas",
+    "descripcion": "Manguito es una tienda-restaurante de shucos o panes, postres, snacks, pero su principal producto son las granizadas. También es caracterizada por sus precios económicos y por una velocidad de entrega moderada y bastante concurrida entre los cambios de clases de los estudiantes, sin embargo, es una opción innovadora dentro de la universidad.",
     "etiquetas" : [
         "Granizadas",
         "Postres",
-        "Shucos"
+        "Shucos",
+        "Combos"
     ],
     "menu": [
         {
@@ -47,21 +48,6 @@
                 "Jalea de piña",
                 "Jalea de coco",
                 "Leche condensada"
-            ],
-            "complementos":[]
-        },
-        {
-            "nombreMenu": "Pollo Pizziola",
-            "descripcion": "Emparedado al estilo italiano con pepperoni, pechuga de pollo, salsa marinara y queso",
-            "precio": "12 onzas por Q12.00 y 16 onzas por Q15.00",
-            "ingredientes":[
-                "Pepperoni",
-                "Pollo",
-                "Salsa Marinara",
-                "Queso",
-                "Pan",
-                "Vegetales",
-                "Salsas"
             ],
             "complementos":[]
         },
@@ -166,6 +152,60 @@
                 "Salsas",
                 "Repollo",
                 "Embutidos"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Croissant de jamón y queso",
+            "descripcion": "Pan tipo croissant con jamón ahumado y quesos fundidos.",
+            "precio": "Q15.00",
+            "ingredientes":[
+                "Pan Croissant",
+                "Jamón ahumado",
+                "4 quesos fundidos"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Croissant de frijol y queso",
+            "descripcion": "Pan tipo croissant con frijol y queso mozzarella.",
+            "precio": "Q12.00",
+            "ingredientes":[
+                "Pan Croissant",
+                "Frijol",
+                "Queso Mozzarella"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Relámpago",
+            "descripcion": "Un pan relámbago horneado relleno de manjar y una cubierta caramelizada",
+            "precio": "Q12.00",
+            "ingredientes":[
+                "Pan",
+                "Relleno de manjar",
+                "Caramelo como cubierta del pan"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Milhojas",
+            "descripcion": "Hojaldre con relleno de turrón y cajeta",
+            "precio": "Q12.00",
+            "ingredientes":[
+                "Hojaldre",
+                "Turrón",
+                "Cajeta"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Strudel",
+            "descripcion": "Strudel relleno de jalea de diversas frutas",
+            "precio": "Q12.00",
+            "ingredientes":[
+                "Pan Strudel",
+                "Jalea de frutas"
             ],
             "complementos":[]
         }

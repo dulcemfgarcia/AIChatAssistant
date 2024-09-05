@@ -1,0 +1,139 @@
+{
+    "nombre": "Burger King",
+    "descripcion": "Burger King es una cadena de comida rápida que ofrece una amplia variedad de combos, hamburguesas, postres, y bebidas. Es conocido por sus hamburguesas a la parrilla, papas fritas y opciones variadas de menú para desayuno, almuerzo y cena.",
+    "etiquetas": [
+        "Comida rápida",
+        "Hamburguesas",
+        "Combos",
+        "Bebidas",
+        "Postres",
+        "Desayuno",
+        "Almuerzo",
+        "Cena"
+    ],
+    "menu": [
+        {
+            "nombreMenu": "Whopper Combo",
+            "descripcion": "Combo que incluye una hamburguesa Whopper a la parrilla con lechuga, tomate, cebolla, pepinillos, kétchup y mayonesa, acompañada de papas fritas y una bebida.",
+            "precio": "Q45",
+            "ingredientes": [
+                "Carne de res a la parrilla",
+                "Lechuga",
+                "Tomate",
+                "Cebolla",
+                "Pepinillos",
+                "Kétchup",
+                "Mayonesa",
+                "Pan de hamburguesa"
+            ],
+            "complementos": [
+                "Papas fritas",
+                "Bebida"
+            ]
+        },
+        {
+            "nombreMenu": "Cheeseburger Combo",
+            "descripcion": "Combo que incluye una hamburguesa con queso derretido, carne a la parrilla, pepinillos, kétchup y mostaza, acompañada de papas fritas y una bebida.",
+            "precio": "Q35",
+            "ingredientes": [
+                "Carne de res a la parrilla",
+                "Queso cheddar",
+                "Pepinillos",
+                "Kétchup",
+                "Mostaza",
+                "Pan de hamburguesa"
+            ],
+            "complementos": [
+                "Papas fritas",
+                "Bebida"
+            ]
+        },
+        {
+            "nombreMenu": "Chicken Sandwich Combo",
+            "descripcion": "Combo que incluye un sándwich de pollo crujiente con lechuga y mayonesa, acompañada de papas fritas y una bebida.",
+            "precio": "Q40",
+            "ingredientes": [
+                "Pollo empanizado",
+                "Lechuga",
+                "Mayonesa",
+                "Pan de hamburguesa"
+            ],
+            "complementos": [
+                "Papas fritas",
+                "Bebida"
+            ]
+        },
+        {
+            "nombreMenu": "King Nuggets Combo",
+            "descripcion": "Combo que incluye 6 piezas de nuggets de pollo, acompañadas de papas fritas y una bebida.",
+            "precio": "Q30",
+            "ingredientes": [
+                "Nuggets de pollo"
+            ],
+            "complementos": [
+                "Papas fritas",
+                "Bebida"
+            ]
+        },
+        {
+            "nombreMenu": "Big King Combo",
+            "descripcion": "Combo que incluye una hamburguesa Big King con dos carnes de res a la parrilla, queso, lechuga, cebolla, pepinillos y salsa especial, acompañada de papas fritas y una bebida.",
+            "precio": "Q50",
+            "ingredientes": [
+                "Dos carnes de res a la parrilla",
+                "Queso",
+                "Lechuga",
+                "Cebolla",
+                "Pepinillos",
+                "Salsa especial",
+                "Pan de hamburguesa"
+            ],
+            "complementos": [
+                "Papas fritas",
+                "Bebida"
+            ]
+        },
+        {
+            "nombreMenu": "Long Chicken Combo",
+            "descripcion": "Combo que incluye un sándwich de pollo largo con lechuga y mayonesa, acompañada de papas fritas y una bebida.",
+            "precio": "Q42",
+            "ingredientes": [
+                "Pollo empanizado",
+                "Lechuga",
+                "Mayonesa",
+                "Pan largo"
+            ],
+            "complementos": [
+                "Papas fritas",
+                "Bebida"
+            ]
+        },
+        {
+            "nombreMenu": "Combo de desayuno",
+            "descripcion": "Incluye una opción de desayuno con una croissant de jamón y huevo, acompañada de papas hash brown y café.",
+            "precio": "Q30",
+            "ingredientes": [
+                "Croissant",
+                "Jamón",
+                "Huevo",
+                "Queso"
+            ],
+            "complementos": [
+                "Papas hash brown",
+                "Café"
+            ]
+        },
+        {
+            "nombreMenu": "Combo de postre",
+            "descripcion": "Incluye un helado de vainilla con topping de chocolate o fresa, acompañado de una bebida.",
+            "precio": "Q15",
+            "ingredientes": [
+                "Helado de vainilla",
+                "Topping de chocolate o fresa"
+            ],
+            "complementos": [
+                "Bebida"
+            ]
+        }
+    ]
+}
