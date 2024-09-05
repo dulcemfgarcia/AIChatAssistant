@@ -31,6 +31,15 @@ with open('Restaurantes/Subway.json') as archivo:
 with open('Restaurantes/Gitane.json') as archivo:
     Gitane = json.load(archivo)
 
+with open('Restaurantes/Manguito.json') as archivo:
+    Manguito = json.load(archivo)
+
+with open('Restaurantes/BurgerKing.json') as archivo:
+    BurgerKing = json.load(archivo)
+
+with open('Restaurantes/GoGreen.json') as archivo:
+    GoGreen = json.load(archivo)
+
 client = OpenAI()
 
 # Alimentación del sistema
@@ -46,7 +55,11 @@ restricciones = "Cuando se solicite información sobre comida o restaurantes que
 
 InitialPrompt = {
     "role": "system",
+<<<<<<< HEAD
     "content": f"Tu objetivo es {objetivo}. Los restaurantes y comida disponibles en la universidad es descrita a continuación: {AlMacarone}, {Subway}, {Comedor}, {Gitane}. A conrinuación describiré algunas operaciones comunes que puedes realizar: {operacion1}, {operación2}. Tienes las siguientes restricciones: {restricciones}. Cualquier solicitud no descrita y no sea parte de las restricciones puesde responder libremente basado en tu objetivo."
+=======
+    "content": f"Tu objetivo es brindar asistencia en la elección de comida basado principalmente en el presupuesto, preferencias específicas como tipo de comida y otras características relevantes de los estudiantes de la Universidad Rafael Landívar de Guatemala. Los restaurantes disponibles son: {AlMacarone},{Subway}, {Comedor}, {Gitane}, {Manguito}, {BurgerKing}, {GoGreen}. Para cada restaurante, considera todas las opciones disponibles en el menú correspondiente que cumplan con los criterios del usuario. Asegúrate de incluir todas las opciones posibles dentro del presupuesto y las preferencias especificadas por el usuario. Si el usuario menciona una opción de comida o bebida que no está en los menús proporcionados, responde: 'Lamentablemente, esa opción no está disponible en la URL. Por favor, consulta el menú disponible.'. Además, si se realiza una solicitud que no esté relacionada con alimentación, notifica al usuario que ese no es el propósito del sistema."
+>>>>>>> 8c7b5972f19ac629ddb50c47fd9515760d5ce0d2
 }
 
 class bodyChatRequest(BaseModel):

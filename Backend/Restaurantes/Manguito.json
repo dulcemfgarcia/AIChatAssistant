@@ -1,0 +1,251 @@
+{
+    "nombre": "Manguito",
+    "descripcion": "Manguito es una tienda-restaurante de shucos o panes, postres, snacks, pero su principal producto son las granizadas. También es caracterizada por sus precios económicos y por una velocidad de entrega moderada y bastante concurrida entre los cambios de clases de los estudiantes, sin embargo, es una opción innovadora dentro de la universidad.",
+    "etiquetas" : [
+        "Granizadas",
+        "Postres",
+        "Shucos",
+        "Combos"
+    ],
+    "menu": [
+        {
+            "nombreMenu": "Granizada Hawaiana",
+            "descripcion" : "Granizada dulce de jalea de piña, piña, sal, pepita, limón y complementos al gusto.",
+            "precio": "12 onzas por Q12.00 y 16 onzas por Q15.00",
+            "ingredientes":[
+                "Piña",
+                "Jalea de piña",
+                "sal",
+                "Pepita"
+            ],
+            "complementos": [
+                "Tajín",
+                "Mango",
+                "Productos como: Elotitos, Manías o Palitos"
+            ]
+        },
+        {
+            "nombreMenu": "Granizada V8",
+            "descripcion" : "Granizada agridulce con jugo V8, salsa inglesa, sal, pepita y limón.",
+            "precio": "12 onzas por Q12.00 y 16 onzas por Q15.00",
+            "ingredientes":[
+                "Jugo V8",
+                "Salsa inglesa",
+                "Sal",
+                "Pepita",
+                "Limón"
+            ],
+            "complementos": [
+                "Tajín",
+                "Productos como: Elotitos, Manías o Palitos"
+            ]
+        },
+        {
+            "nombreMenu": "Granizada de Piña Colada",
+            "descripcion": "Granizada muy dulce de jalea de piña, jalea de coco y leche condensada.",
+            "precio": "12 onzas por Q12.00 y 16 onzas por Q15.00",
+            "ingredientes":[
+                "Jalea de piña",
+                "Jalea de coco",
+                "Leche condensada"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Granizada de Manguito",
+            "descripcion": "Granizada dulce de 12 o 16 onzas de jalea de mango, piña con diversos jarábes de la casa",
+            "precio": "12 onzas por Q12.00 y 16 onzas por Q15.00",
+            "ingredientes":[
+                "Jalea de mango",
+                "Piña",
+                "Jarabes especiales"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Granizada de limón",
+            "descripcion": "Granizada salada de 12 o 16 onzas de limón, sal, pepita y mango verde al gusto del cliente.",
+            "precio": "12 onzas por Q12.00 y 16 onzas por Q15.00",
+            "ingredientes":[
+                "Limón",
+                "Sal",
+                "Pepita",
+                "Mango verde al gusto"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Granizada de Frutos Rojos",
+            "descripcion": "Granizada dulce de 12 o 16 onzas de jalea de fresa mora, leche condensada y jarabe de frambuesa.",
+            "precio": "12 onzas por Q12.00 y 16 onzas por Q15.00",
+            "ingredientes":[
+                "Jalea de fresa",
+                "Mora",
+                "Leche condensada",
+                "Jarabe de frambuesa"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Granizada de la temporada",
+            "descripcion": "Granizada de 12 o 16 onzas que suele contener los productos (frutas y sazonadores) que se encuentran en temporada",
+            "precio": "12 onzas por Q12.00 y 16 onzas por Q15.00",
+            "ingredientes":[
+                "Random según la fecha"
+            ],
+            "complementos":[
+            ]
+        },
+        {
+            "nombreMenu": "Granizada de cremita de coco",
+            "descripcion": "Granizada de 12 o 16 onzas preparado con jarabe de crema, coco y diversos jarabes de la casas",
+            "precio": "12 onzas por Q12.00 y 16 onzas por Q15.00",
+            "ingredientes":[
+                "Jarabe de crema",
+                "Coco",
+                "Diversos jarabes"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Snack de mango",
+            "descripcion": "Un vaso de 12 o 16 onzas con mango verde cortado en fajas únicamente, puede ir sin acompañamientos para ser más saludable o pepita y sal.",
+            "precio": "12 onzas por Q15.00 y 16 onzas por Q20.00",
+            "ingredientes":[
+                "Al gusto del cliente",
+                "Mango"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Snack Mangada",
+            "descripcion": "Trozos de mango maduro con pepita, limón y sal preparados en un vaso de 12 o 16 onzas",
+            "precio": "12 onzas por Q15.00 y 16 onzas por Q20.00",
+            "ingredientes":[
+                "Mango",
+                "Pepita",
+                "Limón",
+                "Sal"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Snack de pepino y Zanahoria",
+            "descripcion": "Un vaso con trozos de zanahoria y pepino que pueden ser preparados al gusto del cliente: con sal, pepita, tajín",
+            "precio": "Q18.00",
+            "ingredientes":[
+                "Zanahoria",
+                "Pepino",
+                "Pepita",
+                "Sal",
+                "Limón"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Shuco",
+            "descripcion": "Pan personalizable con 1, 2 o 3 embutidos, los cuales pueden ser salchicha, chorizo, longaniza y salami.",
+            "precio": "el shuco tiene los siguientes precios según la cantidad de embutidos: 1 embutido a Q15, 2 embutidos a Q18.00, 3 embutidos a Q21.00 por cada shuco",
+            "ingredientes":[
+                "Pan",
+                "Guacamole",
+                "Salsas",
+                "Repollo",
+                "Embutidos"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Croissant de jamón y queso",
+            "descripcion": "Pan tipo croissant con jamón ahumado y quesos fundidos.",
+            "precio": "Q15.00",
+            "ingredientes":[
+                "Pan Croissant",
+                "Jamón ahumado",
+                "4 quesos fundidos"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Croissant de frijol y queso",
+            "descripcion": "Pan tipo croissant con frijol y queso mozzarella.",
+            "precio": "Q12.00",
+            "ingredientes":[
+                "Pan Croissant",
+                "Frijol",
+                "Queso Mozzarella"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Relámpago",
+            "descripcion": "Un pan relámbago horneado relleno de manjar y una cubierta caramelizada",
+            "precio": "Q12.00",
+            "ingredientes":[
+                "Pan",
+                "Relleno de manjar",
+                "Caramelo como cubierta del pan"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Milhojas",
+            "descripcion": "Hojaldre con relleno de turrón y cajeta",
+            "precio": "Q12.00",
+            "ingredientes":[
+                "Hojaldre",
+                "Turrón",
+                "Cajeta"
+            ],
+            "complementos":[]
+        },
+        {
+            "nombreMenu": "Strudel",
+            "descripcion": "Strudel relleno de jalea de diversas frutas",
+            "precio": "Q12.00",
+            "ingredientes":[
+                "Pan Strudel",
+                "Jalea de frutas"
+            ],
+            "complementos":[]
+        }
+    ],
+    "Combos" : [
+        {
+            "nombreCombo" : "Combo 1",
+            "descripcion" : "Es un combo de 3 componentes: 1 shuco simple, nachos y refresco",
+            "Componentes":[
+                "1 shuco de 1 embutido",
+                "Nachos",
+                "Un refresco, que es una bebida natural del día en el restaurante, la cual es al azar"
+            ]
+        },
+        {
+            "nombreCombo" : "Combo 2",
+            "descripcion" : "Es un combo de 4 componentes: 2 shucos simple, nachos y refresco",
+            "Componentes":[
+                "2 shucos de 1 embutido cada uno",
+                "Nachos",
+                "Un refresco, que es una bebida natural del día en el restaurante, la cual es al azar"
+            ]
+        },
+        {
+            "nombreCombo": "Combo 3",
+            "descripcion": "Es un combo de 4 componentes: 2 shucos dobles, nachos y refresco",
+            "Componentes": [
+                "2 shucos de 2 embutidos cada uno",
+                "Nachos",
+                "Un refresco, que es una bebida natural del día en el restaurante, la cual es al azar"
+            ]
+        },
+        {
+            "nombreCombo": "Combo 4",
+            "descripcion": "Es un combo de 4 componentes: 2 shucos triple, nachos y refresco",
+            "Componentes": [
+                "2 shucos de 3 embutidos cada uno",
+                "Nachos",
+                "Un refresco, que es una bebida natural del día en el restaurante, la cual es al azar"
+            ]
+        }
+    ]
+}

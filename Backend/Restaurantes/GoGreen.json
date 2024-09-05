@@ -1,0 +1,270 @@
+{
+    "nombre": "GoGreen",
+    "descripcion": "GoGreen es un restaurante especializado en comida saludable, ofreciendo una amplia variedad de ensaladas, wraps, bowls, sopas y opciones de bebidas naturales. Sus opciones incluyen ingredientes frescos y saludables, con opciones personalizables para todos los gustos.",
+    "etiquetas": [
+        "Comida Saludable",
+        "Ensaladas",
+        "Wraps",
+        "Bowls",
+        "Sopas",
+        "Bebidas Naturales",
+        "Vegetariano",
+        "Vegano",
+        "Desayuno",
+        "Almuerzo",
+        "Cena"
+    ],
+    "menu": [
+        {
+            "nombreMenu": "Go Roma",
+            "descripcion": "Ensalada con pollo, queso parmesano, crutones y aderezo César.",
+            "precio": "Q35.90",
+            "ingredientes": [
+                "Pollo",
+                "Queso parmesano",
+                "Crutones",
+                "Aderezo César"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Go Asia",
+            "descripcion": "Ensalada con pollo, piña, zanahoria, fideo frito, maní y aderezo japonés.",
+            "precio": "Q35.90",
+            "ingredientes": [
+                "Pollo",
+                "Piña",
+                "Zanahoria",
+                "Fideo frito",
+                "Maní",
+                "Aderezo japonés"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Go Cali",
+            "descripcion": "Ensalada con pollo, queso cheddar, frijol rojo, zanahoria, pico de gallo y aderezo chipotle.",
+            "precio": "Q38.90",
+            "ingredientes": [
+                "Pollo",
+                "Queso cheddar",
+                "Frijol rojo",
+                "Zanahoria",
+                "Pico de gallo",
+                "Aderezo chipotle"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Go Zeus",
+            "descripcion": "Ensalada con pollo, tomate, maíz, pepino, maní, crutones, aguacate, queso fresco y aderezo mediterráneo.",
+            "precio": "Q42.90",
+            "ingredientes": [
+                "Pollo",
+                "Tomate",
+                "Maíz",
+                "Pepino",
+                "Maní",
+                "Crutones",
+                "Aguacate",
+                "Queso fresco",
+                "Aderezo mediterráneo"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Tulum",
+            "descripcion": "Bowl con arroz, pollo, frijol, piña, maíz, tomate, cebolla, lechuga, cilantro y aderezo curry.",
+            "precio": "Q37.90",
+            "ingredientes": [
+                "Arroz",
+                "Pollo",
+                "Frijol",
+                "Piña",
+                "Maíz",
+                "Tomate",
+                "Cebolla",
+                "Lechuga",
+                "Cilantro",
+                "Aderezo curry"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Lisboa",
+            "descripcion": "Bowl con lechuga, arroz, quinoa, frijol rojo, aguacate, maíz, cebolla, cilantro y aderezo chipotle.",
+            "precio": "Q37.90",
+            "ingredientes": [
+                "Lechuga",
+                "Arroz",
+                "Quinoa",
+                "Frijol rojo",
+                "Aguacate",
+                "Maíz",
+                "Cebolla",
+                "Cilantro",
+                "Aderezo chipotle"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Mexigo",
+            "descripcion": "Sopa con fideo soya, pollo, cebolla, aguacate, tortilla chips, cebollín, chile y cilantro.",
+            "precio": "Q29.90",
+            "ingredientes": [
+                "Fideo soya",
+                "Pollo",
+                "Cebolla",
+                "Aguacate",
+                "Tortilla chips",
+                "Cebollín",
+                "Chile",
+                "Cilantro"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Geisha",
+            "descripcion": "Sopa con fideo soya, pollo, brócoli, huevo, cebolla, espinaca, cilantro y limón.",
+            "precio": "Q27.90",
+            "ingredientes": [
+                "Fideo soya",
+                "Pollo",
+                "Brócoli",
+                "Huevo",
+                "Cebolla",
+                "Espinaca",
+                "Cilantro",
+                "Limón"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Exótico",
+            "descripcion": "Wrap con pollo, cheddar, tomate, maíz, cebolla y aderezo limón cilantro.",
+            "precio": "Q28.90",
+            "ingredientes": [
+                "Pollo",
+                "Cheddar",
+                "Tomate",
+                "Maíz",
+                "Cebolla",
+                "Aderezo limón cilantro"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "César",
+            "descripcion": "Wrap con pollo, parmesano, crutones y aderezo césar.",
+            "precio": "Q28.90",
+            "ingredientes": [
+                "Pollo",
+                "Parmesano",
+                "Crutones",
+                "Aderezo césar"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Indic",
+            "descripcion": "Wrap con pollo, pepino, crutones y aderezo honey mustard.",
+            "precio": "Q28.90",
+            "ingredientes": [
+                "Pollo",
+                "Pepino",
+                "Crutones",
+                "Aderezo honey mustard"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Pacific",
+            "descripcion": "Wrap con pollo, coco rallado, pepino, zanahoria y aderezo curry.",
+            "precio": "Q28.90",
+            "ingredientes": [
+                "Pollo",
+                "Coco rallado",
+                "Pepino",
+                "Zanahoria",
+                "Aderezo curry"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Pavo Guacamole",
+            "descripcion": "Panini con jamón de pavo, guacamole, tomate, cheddar y aderezo ranch.",
+            "precio": "Q27.90",
+            "ingredientes": [
+                "Jamón de pavo",
+                "Guacamole",
+                "Tomate",
+                "Cheddar",
+                "Aderezo ranch"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Chicken Pesto",
+            "descripcion": "Panini con pollo, tomate, mozzarella, cebolla morada y aderezo pesto.",
+            "precio": "Q27.90",
+            "ingredientes": [
+                "Pollo",
+                "Tomate",
+                "Mozzarella",
+                "Cebolla morada",
+                "Aderezo pesto"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Combo Bebida + Granola o Tosh",
+            "descripcion": "Bebida acompañada de una barra de granola o Tosh.",
+            "precio": "Q12",
+            "ingredientes": [
+                "Bebida",
+                "Granola o Tosh"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Combo Bebida + Chips",
+            "descripcion": "Bebida acompañada de una bolsa de chips.",
+            "precio": "Q15",
+            "ingredientes": [
+                "Bebida",
+                "Chips"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Combo Bebida + Sopa o Arroz pequeño",
+            "descripcion": "Bebida acompañada de una sopa o arroz pequeño.",
+            "precio": "Q19",
+            "ingredientes": [
+                "Bebida",
+                "Sopa o Arroz pequeño"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Combo Bebida + Snack",
+            "descripcion": "Bebida acompañada de un snack.",
+            "precio": "Q18",
+            "ingredientes": [
+                "Bebida",
+                "Snack"
+            ],
+            "complementos": []
+        },
+        {
+            "nombreMenu": "Combo Bebida + Parfait",
+            "descripcion": "Bebida acompañada de un parfait.",
+            "precio": "Q22",
+            "ingredientes": [
+                "Bebida",
+                "Parfait"
+            ],
+            "complementos": []
+        }
+    ]
+}
