@@ -8,7 +8,7 @@ from typing import List
 
 app = FastAPI()
 
-if _name_ == '_main_':
+if __name__ == '__main__':
    uvicorn.run('main:app', port=8000)
 
 app.add_middleware(
